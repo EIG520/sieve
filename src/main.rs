@@ -9,6 +9,7 @@ fn main() {
         primes.extend_from_slice(&sieve.find_unset(SieveLimit::ManyPrimes).unwrap());
     }
 
+    // Find working offsets
     for i in 1..7 {
         let working = get_working_offsets(primes[..i].to_vec());
 
